@@ -6,6 +6,8 @@ class Productos extends BaseController
 {
     public function index()
     {
-        echo "muestra los productos";
+        return view("plantilla/header")
+               .view("productos/body")
+               .view("plantilla/footer");
     }
 }
