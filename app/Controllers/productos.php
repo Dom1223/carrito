@@ -6,8 +6,12 @@ class Productos extends BaseController
 {
     public function index()
     {
-        return view("plantilla/header")
-               .view("productos/body")
-               .view("plantilla/footer");
+        $db = \config\Database::connect();
+
+        $query = $db->query("SELECT nombre, precio, stock FROM productos");
+        $resultado = $query->getResult();
+        $datos = ["productos" => $resultado];
+
+        return view("productos/body", $datos);
     }
 }
