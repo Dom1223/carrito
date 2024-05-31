@@ -17,8 +17,6 @@
             <td><?php echo $producto->nombre; ?></td>
             <td><?php echo $producto->precio; ?></td>
             <td><?php echo $producto->stock; ?></td>
-            <td>
-                <div class="form-button-action">
 
 
             </tr>

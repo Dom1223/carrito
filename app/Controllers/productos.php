@@ -12,6 +12,16 @@ class Productos extends BaseController
         $resultado = $query->getResult();
         $datos = ["productos" => $resultado];
 
-        return view("productos/body", $datos);
+        $datos['cabezera']= view('template/cabezera');
+        $datos['pie']= view('template/piepagina');
+
+        return view("productos/lista", $datos);
+    }
+    public function crear(){
+
+        $datos['cabezera']= view('template/cabezera');
+        $datos['pie']= view('template/piepagina');
+
+        return view('productos/crear', $datos);
     }
 }

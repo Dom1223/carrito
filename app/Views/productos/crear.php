@@ -1,0 +1,3 @@
+<?=$cabezera?>
+    Formulario crear
+<?=$pie?>

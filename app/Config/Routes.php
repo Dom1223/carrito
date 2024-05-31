@@ -8,3 +8,5 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/productos', 'productos::index');
 
+$routes->get('lista', 'Productos::index');
+$routes->get('crear', 'Productos::crear');
