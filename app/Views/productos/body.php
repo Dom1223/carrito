@@ -1,5 +1,4 @@
-<?php echo $this->extend("planti
-lla/layout"); ?>
+<?php echo $this->extend("plantilla/layout"); ?>
 <?php echo $this->section("contenido"); ?>
 
 <h2>productos</h2>
