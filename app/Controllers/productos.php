@@ -40,6 +40,10 @@ class Productos extends BaseController
 
         print_r($stock);
 
-       
+ 
+    }
+    public function borrar($productos=null){
+
+        echo "Borrar registro".$productos;
     }
 }
