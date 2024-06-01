@@ -1,5 +1,4 @@
 <?=$cabezera?>
-
 <a href="<?=base_url('crear')?>">Crear un libro</a>
         <table class="table table-light">
             <thead class="thead-light">
