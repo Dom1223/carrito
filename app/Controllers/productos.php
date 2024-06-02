@@ -49,17 +49,14 @@ class Productos extends BaseController
     public function guardar() {
 
         $productos= new productos();
-        $nombre= $this->request->getVar('nombre');
-   
 
+        $nombre= $this->request->getVar('nombre');
         print_r($nombre);
 
         $precio= $this->request->getvar('precio');
-
         print_r($precio);
 
         $stock= $this->request->getVar('stock');
-
         print_r($stock);
 
  
