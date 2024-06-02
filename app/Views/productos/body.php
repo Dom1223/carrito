@@ -1,7 +1,7 @@
 <?php echo $this->extend("plantilla/layout"); ?>
 <?php echo $this->section("contenido"); ?>
 
-<h2>productos</h2>
+<h2>productos JONATHAN</h2>
 
 <table border="1" width="400">
     <thead>
