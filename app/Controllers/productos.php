@@ -2,8 +2,18 @@
 
 namespace App\Controllers;
 
-class Productos extends BaseController
+use CodeIgniter\Controller;
+use app\Models\tabla;
+
+class productos extends Controller
 {
+    
+    public function inicio()
+    {
+        return view('inicio');
+
+    }
+
     public function index()
     {
         $db = \config\Database::connect();
@@ -17,26 +27,12 @@ class Productos extends BaseController
             // Devuelve los datos en formato JSON
             return $this->response->setJSON($datos);
         } else {
-            // Si no se solicita JSON, carga las vistas y devuelve la página completa
+        
             $datos['cabezera'] = view('template/cabezera');
             $datos['pie'] = view('template/piepagina');
             
             return view("productos/lista", $datos);
         }
-    }
-
-    public function footer()
-    {
-        $db = \config\Database::connect();
-
-        $query = $db->query("SELECT nombre, precio, stock FROM productos");
-        $resultado = $query->getResult();
-        $datos = ["productos" => $resultado];
-
-        $datos['cabezera']= view('template/cabezera');
-        $datos['pie']= view('template/piepagina');
-
-        return view("plantilla/footer", $datos);
     }
 
     public function crear(){
@@ -48,7 +44,20 @@ class Productos extends BaseController
     }
     public function guardar() {
 
-        $productos= new productos();
+        $tabla= new tabla();
+
+        if ($imagen=$this->request->getFile("imagen")){
+
+            $nuevoNombre= $imagen->getRandomName();
+
+            $datos=["nombre" =>$this->request->getVar("nombre"),
+                    "imagen"=>$nuevoNombre
+            ];
+        $tabla->insert($datos);
+
+        }
+
+        echo "imagen ingresada";
 
         $nombre= $this->request->getVar('nombre');
         print_r($nombre);
