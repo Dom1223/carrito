@@ -118,7 +118,27 @@
             <h2>Bienvenidos a nuestra tienda</h2>
             <p>Encuentra los mejores productos a los mejores precios.</p>
         </section>
+        <section id="products">
+        <div class="product-list">
+        <?php foreach($productos as $productos) :?>
+            <article class="product-item">
+                    <img src="product1.jpg" alt="Producto 1">
+                    <h3><?php echo $productos->nombre; ?></h3>
+                    <p>Descripción del producto 1.</p>
+                    <p>Precio: $<?php echo $productos->precio; ?>.00</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </article>
+                <!--
+                <tr>
+                <td><?php echo $productos->nombre; ?></td>
+                <td><?php echo $productos->precio; ?></td>
+                <td><?php echo $productos->stock; ?></td>
+                -->
 
+                <?php endforeach; ?>
+        </div>
+         </section>
+        <!--
         <section id="products">
             <h2>Productos Destacados</h2>
             <div class="product-list">
@@ -136,10 +156,10 @@
                     <p>Precio: $15.00</p>
                     <button class="add-to-cart">Añadir al carrito</button>
                 </article>
-                <!-- Más productos -->
+                 
             </div>
         </section>
-
+        -->
         <section id="about">
             <h2>Sobre Nosotros</h2>
             <p>Información sobre la tienda.</p>
