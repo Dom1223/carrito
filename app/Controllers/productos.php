@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\Tabla; // Asegúrate de que el nombre del modelo es correcto
+use App\Models\Tabla; // el nombre del modelo
 
 class Productos extends Controller
 {

@@ -5,9 +5,10 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/carrito', 'productos::carrito');
 $routes->get('/', 'productos::inicio');
 $routes->get('/productos', 'productos::index');
+$routes->get('/carrito', 'productos::carrito');
+
 
 $routes->get('lista', 'Productos::index');
 $routes->get('crear', 'Productos::crear');
