@@ -16,3 +16,39 @@ in APPPATH\Controllers\productos.php on line 19.
  4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-03 01:52:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "carrito.php"
+[Method: GET, Route: carrito]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('carrito.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('carrito', [], true)
+ 3 APPPATH\Controllers\productos.php(18): view('carrito')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\productos->carrito()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-03 02:11:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "carrito.php"
+[Method: GET, Route: carrito]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('carrito.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('carrito', [], true)
+ 3 APPPATH\Controllers\productos.php(18): view('carrito')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\productos->carrito()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-03 02:24:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "carrito.php"
+[Method: GET, Route: carrito]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('carrito.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('carrito', [], true)
+ 3 APPPATH\Controllers\productos.php(18): view('carrito')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Productos->carrito()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
