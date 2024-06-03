@@ -16,6 +16,7 @@ in APPPATH\Controllers\productos.php on line 19.
  4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+<<<<<<< HEAD
 CRITICAL - 2024-06-03 01:52:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "carrito.php"
 [Method: GET, Route: carrito]
 in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
@@ -52,3 +53,113 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
  7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+=======
+CRITICAL - 2024-06-03 02:09:54 --> ErrorException: Undefined variable $productos
+[Method: GET, Route: /]
+in APPPATH\Views\inicio.php on line 121.
+ 1 APPPATH\Views\inicio.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productos', 'D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php', 121)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\productos.php(18): view('inicio')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\productos->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-03 02:09:56 --> ErrorException: Undefined variable $productos
+[Method: GET, Route: /]
+in APPPATH\Views\inicio.php on line 121.
+ 1 APPPATH\Views\inicio.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productos', 'D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php', 121)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\productos.php(18): view('inicio')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\productos->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-03 02:09:57 --> ErrorException: Undefined variable $productos
+[Method: GET, Route: /]
+in APPPATH\Views\inicio.php on line 121.
+ 1 APPPATH\Views\inicio.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productos', 'D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php', 121)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\productos.php(18): view('inicio')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\productos->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-03 02:09:57 --> ErrorException: Undefined variable $productos
+[Method: GET, Route: /]
+in APPPATH\Views\inicio.php on line 121.
+ 1 APPPATH\Views\inicio.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productos', 'D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php', 121)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\productos.php(18): view('inicio')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\productos->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-03 02:09:57 --> ErrorException: Undefined variable $productos
+[Method: GET, Route: /]
+in APPPATH\Views\inicio.php on line 121.
+ 1 APPPATH\Views\inicio.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productos', 'D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php', 121)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\productos.php(18): view('inicio')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\productos->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-03 02:09:58 --> ErrorException: Undefined variable $productos
+[Method: GET, Route: /]
+in APPPATH\Views\inicio.php on line 121.
+ 1 APPPATH\Views\inicio.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productos', 'D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php', 121)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\productos.php(18): view('inicio')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\productos->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-03 02:09:58 --> ErrorException: Undefined variable $productos
+[Method: GET, Route: /]
+in APPPATH\Views\inicio.php on line 121.
+ 1 APPPATH\Views\inicio.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productos', 'D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php', 121)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\carrito\\app\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\productos.php(18): view('inicio')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\productos->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-03 02:11:13 --> ErrorException: Undefined variable $productos
+[Method: GET, Route: /]
+in APPPATH\Controllers\productos.php on line 18.
+ 1 APPPATH\Controllers\productos.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productos', 'D:\\xampp\\htdocs\\carrito\\app\\Controllers\\productos.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\productos->inicio()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+>>>>>>> 08fc9e03226222426896f977a78c41c750ec19ea
