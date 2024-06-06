@@ -3,9 +3,9 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use app\Models\tabla;
+use App\Models\Tabla; // el nombre del modelo
 
-class productos extends Controller
+class Productos extends Controller
 {
     
     public function inicio()
@@ -16,6 +16,16 @@ class productos extends Controller
         $resultado = $query->getResult();
         $datos = ["productos" => $resultado];
         return view('inicio',$datos);
+
+    }
+    public function carrito()
+    {
+        return view('carrito');
+
+    }
+    public function login()
+    {
+        return view('login');
 
     }
 
@@ -49,7 +59,7 @@ class productos extends Controller
     }
     public function guardar() {
 
-        $tabla= new tabla();
+        $tabla= new Tabla();
 
         if ($imagen=$this->request->getFile("imagen")){
 

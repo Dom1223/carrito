@@ -1,11 +1,12 @@
-<?php 
+<?php
+
 namespace App\Models;
 
 use CodeIgniter\Model;
 
-class tabla extends Model{
-    protected $table      = 'productos';
-    // Uncomment below if you want add primary key
-     protected $primaryKey = 'id';
-     protected $allowedFields=['id','imagen','Nombre','Descripción','stock','precio'];
+class Tabla extends Model
+{
+    protected $table = 'productos';       // Nombre de la tabla en la base de datos
+    protected $primaryKey = 'id';         // Clave primaria
+    protected $allowedFields = ['id','nombre', 'imagen', 'Descripción', 'precio', 'stock']; // Campos permitidos para inserción/actualización
 }
