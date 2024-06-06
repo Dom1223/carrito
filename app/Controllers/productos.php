@@ -23,6 +23,11 @@ class Productos extends Controller
         return view('carrito');
 
     }
+    public function login()
+    {
+        return view('login');
+
+    }
 
     public function index()
     {
