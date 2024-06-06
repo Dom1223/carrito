@@ -9,6 +9,7 @@ $routes->get('/', 'productos::inicio');
 $routes->get('/productos', 'productos::index');
 $routes->get('/carrito', 'productos::carrito');
 $routes->get('/login', 'productos::login');
+$routes->get('/pago', 'productos::pago');
 
 
 

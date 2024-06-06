@@ -29,6 +29,14 @@ class Productos extends Controller
 
     }
 
+    public function pago()
+    {
+        return view('pago');
+
+    }
+
+
+
     public function index()
     {
         $db = \config\Database::connect();
