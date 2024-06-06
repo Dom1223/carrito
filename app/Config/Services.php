@@ -29,4 +29,14 @@ class Services extends BaseService
      *     return new \CodeIgniter\Example();
      * }
      */
+    
+    public static function cart($getShared = true)
+    {
+        if ($getShared)
+        {
+            return static::getSharedInstance('cart');
+        }
+
+        return new \CodeIgniter\Cart\Cart();
+    }
 }
