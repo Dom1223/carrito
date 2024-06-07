@@ -2,115 +2,9 @@
 
 <?php echo $this->section("contenido"); ?>
 <head>
-<style>
-#main-content {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    background-color: #f4f4f4;
-}
 
-#main-content section {
-    margin-bottom: 40px;
-}
+<link rel="stylesheet" href="<?= base_url('css/estiloinicio.css'); ?>">
 
-#home {
-    background: url('banner.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-#home h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#products .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.product-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    flex: 0 1 30%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.product-item:hover {
-    transform: scale(1.05);
-}
-
-.product-item img {
-    max-width: 100%;
-    height: auto;
-}
-
-.product-item h3 {
-    margin: 10px 0;
-    font-size: 1.2em;
-}
-
-.product-item p {
-    margin: 10px 0;
-}
-
-.add-to-cart {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.add-to-cart:hover {
-    background-color: #555;
-}
-
-#about, #contact {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    margin: 10px 0 5px;
-}
-
-.contact-form input, .contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 1em;
-}
-
-.submit-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.submit-button:hover {
-    background-color: #555;
-}
-
-</style>
 </head>
 
     <main id="main-content">
@@ -126,7 +20,7 @@
                     <h3><?php echo $productos->nombre; ?></h3>
                     <p>Descripción del producto 1.</p>
                     <p>Precio: $<?php echo $productos->precio; ?>.00</p>
-                    <button class="add-to-cart">Añadir al carrito</button>
+                    <button class="add-to-cart" name="btnAccion" value="agregar" type="submit">Añadir al carrito</button>
                 </article>
                 <!--
                 <tr>
