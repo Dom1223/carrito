@@ -119,7 +119,7 @@ body {
             </div>
             <div class="cart-actions">
                 <a href="<?= base_url('/') ?>">Seguir Comprando</a>
-                <button class="checkout">Proceder al Pago</button>
+                <button class="checkout" onclick="window.location.href='<?php echo base_url('pago'); ?>'">Proceder al Pago</button>
             </div>
         <?php else: ?>
             <p>Tu carrito está vacío.</p>

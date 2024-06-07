@@ -15,12 +15,16 @@ $routes->get('/', 'Carrito::index');
 $routes->get('carrito/agregar/(:num)', 'Carrito::agregar/$1');
 $routes->get('carrito/ver', 'Carrito::ver');
 $routes->get('carrito/eliminar/(:num)', 'Carrito::eliminar/$1');
+$routes->get('pago','Pago::index');
+
 
 $routes->get('cart', 'Cart::index');
 $routes->post('cart/add', 'Cart::add');
 $routes->post('cart/update', 'Cart::update');
 $routes->get('cart/remove/(:any)', 'Cart::remove/$1');
 $routes->get('cart/clear', 'Cart::clear');
+
+
 
 $routes->get('lista', 'Productos::index');
 $routes->get('crear', 'Productos::crear');
