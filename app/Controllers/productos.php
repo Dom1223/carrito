@@ -35,6 +35,11 @@ class Productos extends Controller
 
     }
 
+    public function nuevasesion()
+    {
+        return view('nuevo');
+
+    }
 
 
     public function index()

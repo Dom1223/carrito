@@ -14,10 +14,10 @@
         <div class="card shadow-lg form-signin">
             <div class="card-body p-5">
                 <h1 class="fs-4 card-title fw-bold mb-4">Iniciar sesión</h1>
-                <form method="POST" action="#" autocomplete="off">
+                <form method="POST" action="<?= base_url('login/authenticate') ?>" autocomplete="off">
 
                     <div class="mb-3">
-                        <label class="mb-2" for="usuario">Usuario</label>
+                        <label class="mb-2" for="user">Usuario</label>
                         <input type="text" class="form-control" name="user" id="user" required autofocus>
                     </div>
 
@@ -39,7 +39,7 @@
             </div>
             <div class="card-footer py-3 border-0">
                 <div class="text-center">
-                    ¿No tienes una cuenta? <a href="register.html" class="text-dark">Registrate aquí</a>
+                    ¿No tienes una cuenta? <a href="nuevo" class="text-dark">Registrate aquí</a>
                 </div>
             </div>
         </div>
@@ -49,9 +49,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    </form>
-        <?php 
-        include("nuevo.php");
-        ?>
 </body>
 </html>

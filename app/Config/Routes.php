@@ -10,6 +10,7 @@ $routes->get('/productos', 'productos::index');
 //$routes->get('/carrito', 'productos::carrito');
 $routes->get('/login', 'productos::login');
 $routes->get('/pago', 'productos::pago');
+$routes->get('/nuevo', 'productos::nuevasesion');
 
 $routes->get('/', 'Carrito::index');
 $routes->get('carrito/agregar/(:num)', 'Carrito::agregar/$1');
@@ -30,3 +31,9 @@ $routes->get('lista', 'Productos::index');
 $routes->get('crear', 'Productos::crear');
 $routes->post('guardar', 'Productos::guardar');
 $routes->get('borrar/(:num)', 'proyectos::borrar/$1');
+
+$routes->get('register', 'RegisterController::index');
+$routes->post('register/store', 'RegisterController::store');
+$routes->get('login', 'LoginController::index');  // Ruta para mostrar el formulario de inicio de sesión
+$routes->post('login/authenticate', 'LoginController::authenticate');  // Ruta para manejar la autenticación
+$routes->get('logout', 'LoginController::logout');  // Ruta para cerrar sesión
