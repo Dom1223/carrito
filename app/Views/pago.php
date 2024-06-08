@@ -105,7 +105,22 @@
             <label for="cvv">CVV</label>
             <input type="text" id="cvv" name="cvv" required>
         </div>
-        <button type="submit" class="btn">Pagar</button>
+        
+    <button type="submit" class="btn" id="pagar-btn">Pagar</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script>
+    // Seleccionar el botón por su ID
+    const pagarBtn = document.getElementById('pagar-btn');
+
+    // Agregar un event listener para el evento click
+    pagarBtn.addEventListener('click', function(event) {
+        // Mostrar un alert al hacer clic
+        alert('el pago se a realizado con exito');
+    });
+</script>
     </form>
 </main>
 <?php echo $this->endsection(); ?>

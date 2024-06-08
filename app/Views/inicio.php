@@ -124,7 +124,7 @@
         <div class="product-list">
             <?php foreach ($productos as $producto): ?>
                 <article class="product-item">
-                    <img src="product.jpg" alt="<?= $producto['Nombre'] ?>">
+                    <img src="<?php echo $producto['imagen']; ?>" alt="<?= $producto['Nombre'] ?>">
                     <h3><?= $producto['Nombre'] ?></h3>
                     <p><?= $producto['Descripcion'] ?></p>
                     <p>Precio: $<?= $producto['precio'] ?></p>

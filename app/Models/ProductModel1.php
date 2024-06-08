@@ -7,5 +7,5 @@ class ProductModel1 extends Model
 {
     protected $table      = 'productos';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['Nombre', 'Descripcion', 'stock', 'precio'];
+    protected $allowedFields = ['Nombre', 'imagen', 'Descripcion', 'stock', 'precio'];
 }

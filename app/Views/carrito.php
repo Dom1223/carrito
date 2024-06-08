@@ -111,7 +111,7 @@ body {
                     <div><?= $item['cantidad'] ?></div>
                     <div>$<?= number_format($item['precio'], 2) ?></div>
                     <div>$<?= number_format($item['precio'] * $item['cantidad'], 2) ?></div>
-                    <div><a href="<?= base_url('carrito/eliminar/'.$item['id']) ?>" class="remove-item">Eliminar</a></div>
+                    <div><a href="<?= base_url('carrito/eliminar/'.$item['id']) ?>" class="btn btn-primary" class="remove-item">Eliminar</a></div>
                 </div>
             <?php endforeach; ?>
             <div class="total-container">

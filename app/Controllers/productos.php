@@ -12,7 +12,7 @@ class Productos extends Controller
     {
         $db = \config\Database::connect();
 
-        $query = $db->query("SELECT nombre, precio, stock FROM productos");
+        $query = $db->query("SELECT nombre, imagen, precio, stock FROM productos");
         $resultado = $query->getResult();
         $datos = ["productos" => $resultado];
         return view('inicio',$datos);
@@ -46,7 +46,7 @@ class Productos extends Controller
     {
         $db = \config\Database::connect();
 
-        $query = $db->query("SELECT nombre, precio, stock FROM productos");
+        $query = $db->query("SELECT nombre, imagen, precio, stock FROM productos");
         $resultado = $query->getResult();
         $datos = ["productos" => $resultado];
 
